@@ -121,7 +121,7 @@ class LanguageDetection:
 
     def get_current_language(self):
         # check if the language has already been saved in the options
-        return self.view.settings().get(OPTIONS_CURRENT_LANG, None)
+        return self.package_settings().get(OPTIONS_CURRENT_LANG, None)
 
     def add_word_seperators(self, language):
         word_separators = self.view.settings().get("word_separators")
